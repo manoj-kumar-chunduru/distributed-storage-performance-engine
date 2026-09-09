@@ -1,5 +1,6 @@
-from time import perf_counter
 from statistics import mean
+from time import perf_counter
+
 from storage_engine.core.engine import StorageEngine
 from storage_engine.storage.backend import InMemoryStorage
 
