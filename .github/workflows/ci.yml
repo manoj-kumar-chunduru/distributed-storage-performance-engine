@@ -37,6 +37,6 @@ jobs:
       - name: Run tests
         run: python -m pytest -q
 
-        - name: Run benchmark smoke test
+      - name: Run benchmark smoke test
         run: |
           PYTHONPATH=src python benchmarks/benchmark.py
