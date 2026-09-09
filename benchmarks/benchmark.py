@@ -4,6 +4,7 @@ from time import perf_counter
 from storage_engine.core.engine import StorageEngine
 from storage_engine.storage.backend import InMemoryStorage
 
+
 def pct(values, p):
     values = sorted(values)
     return values[min(len(values)-1, int(len(values)*p))]
