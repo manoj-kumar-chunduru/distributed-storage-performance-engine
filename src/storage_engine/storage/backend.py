@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 from threading import RLock
 from typing import Any
 
+
 class StorageBackend(ABC):
     @abstractmethod
     def put(self, key: str, value: Any) -> None: ...
