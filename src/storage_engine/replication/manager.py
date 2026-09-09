@@ -1,3 +1,8 @@
+import logging
+
+logger = logging.getLogger(__name__)
+
+
 class ReplicationManager:
     def __init__(self, replicas=None):
         self.replicas = replicas or []
@@ -9,7 +14,7 @@ class ReplicationManager:
                 replica.put(key, value)
                 successes += 1
             except Exception:
-                pass
+                logger.exception("Replication PUT failed for key=%r", key)
         return successes
 
     def replicate_delete(self, key):
@@ -19,5 +24,5 @@ class ReplicationManager:
                 if replica.delete(key):
                     successes += 1
             except Exception:
-                pass
+                logger.exception("Replication DELETE failed for key=%r", key)
         return successes

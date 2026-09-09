@@ -1,5 +1,6 @@
 from storage_engine.cache.ttl_cache import TTLCache
 
+
 def test_cache():
     c = TTLCache(10)
     assert c.get("missing") is None

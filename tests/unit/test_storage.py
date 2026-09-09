@@ -1,5 +1,6 @@
 from storage_engine.storage.backend import InMemoryStorage
 
+
 def test_storage_lifecycle():
     s = InMemoryStorage()
     s.put("a", {"value": 1})

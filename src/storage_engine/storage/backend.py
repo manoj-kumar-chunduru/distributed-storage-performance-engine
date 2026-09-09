@@ -11,6 +11,7 @@ class StorageBackend(ABC):
     @abstractmethod
     def delete(self, key: str) -> bool: ...
 
+
 class InMemoryStorage(StorageBackend):
     def __init__(self):
         self._data = {}
