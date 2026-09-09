@@ -38,8 +38,8 @@ jobs:
       - name: Check Ruff formatting
         run: python -m ruff format --check .
 
-      - name: Run tests
-        run: python -m pytest -q
+      - name: Run tests with coverage
+        run: python -m pytest --cov=src/storage_engine --cov-report=term-missing
 
       - name: Run benchmark smoke test
         run: |
