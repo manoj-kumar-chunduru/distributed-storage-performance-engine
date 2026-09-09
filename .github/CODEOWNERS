@@ -1,0 +1,15 @@
+# Default owner for all repository files
+
+* @manoj-kumar-chunduru
+
+# Core source code
+
+/src/ @manoj-kumar-chunduru
+
+# Tests
+
+/tests/ @manoj-kumar-chunduru
+
+# CI/CD configuration
+
+/.github/ @manoj-kumar-chunduru
