@@ -1,5 +1,6 @@
 from hashlib import sha256
 
+
 class Partitioner:
     def __init__(self, partitions=16):
         if partitions < 1:
